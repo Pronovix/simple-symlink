@@ -1,0 +1,42 @@
+{
+    "name": "pronovix/simple-symlink",
+    "type": "library",
+    "description": "Composer plugin that creates symlinks on project creation.",
+    "keywords": [
+        "Composer",
+        "symlink",
+        "utility",
+        "script"
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^7.1",
+        "composer-plugin-api": "^1.1",
+        "pronovix/composer-logger": "^2.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.7.3",
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "vimeo/psalm": "^3.2"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Pronovix\\SimpleSymlink\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "analyze": "psalm --config=psalm.xml.dist --show-info=false --stats",
+        "check-style": "php-cs-fixer fix --dry-run",
+        "fix-style": "php-cs-fixer fix"
+    }
+}
