@@ -1,7 +1,7 @@
 {
     "name": "pronovix/simple-symlink",
     "type": "library",
-    "description": "Composer plugin that creates symlinks on project creation.",
+    "description": "Simple script that creates symlinks when a Composer event occurs.",
     "keywords": [
         "Composer",
         "symlink",
