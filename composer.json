@@ -12,7 +12,7 @@
     "require": {
         "php": "^7.1",
         "composer-plugin-api": "^1.1",
-        "pronovix/composer-logger": "^2.0"
+        "pronovix/composer-logger": "^2.8"
     },
     "require-dev": {
         "composer/composer": "^1.7.3",
