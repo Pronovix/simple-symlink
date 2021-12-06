@@ -1,14 +1,14 @@
 {
     "name": "pronovix/simple-symlink",
-    "type": "library",
     "description": "Simple script that creates symlinks when a Composer event occurs.",
+    "license": "GPL-2.0-or-later",
+    "type": "library",
     "keywords": [
         "Composer",
         "symlink",
         "utility",
         "script"
     ],
-    "license": "GPL-2.0-or-later",
     "require": {
         "php": "^7.4.0",
         "composer-plugin-api": "^1.1 || ^2.0",
@@ -17,6 +17,13 @@
     "require-dev": {
         "composer/composer": "^1.7.3 || ^2.0",
         "friendsofphp/php-cs-fixer": "^2.15"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Pronovix\\SimpleSymlink\\": "src/"
+        }
     },
     "config": {
         "platform": {
@@ -29,13 +36,6 @@
             "dev-master": "3.x-dev"
         }
     },
-    "autoload": {
-        "psr-4": {
-            "Pronovix\\SimpleSymlink\\": "src/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "analyze": "psalm --config=psalm.xml.dist --show-info=false --stats",
         "check-style": "php-cs-fixer fix --dry-run",
