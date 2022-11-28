@@ -10,7 +10,7 @@
         "script"
     ],
     "require": {
-        "php": "~7.4.0 || ~8.1.6",
+        "php": "~8.1.6",
         "composer-plugin-api": "^1.1 || ^2.0",
         "pronovix/composer-logger": "^3.0"
     },
@@ -27,7 +27,7 @@
     },
     "config": {
         "platform": {
-            "php": "7.4.0"
+            "php": "8.1.6"
         },
         "sort-packages": true
     },
