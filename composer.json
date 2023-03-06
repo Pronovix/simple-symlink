@@ -11,11 +11,11 @@
     ],
     "require": {
         "php": "~8.1.6",
-        "composer-plugin-api": "^1.1 || ^2.0",
+        "composer-plugin-api": "^2.0",
         "pronovix/composer-logger": "^3.0"
     },
     "require-dev": {
-        "composer/composer": "^1.7.3 || ^2.0",
+        "composer/composer": "^2.0",
         "friendsofphp/php-cs-fixer": "^2.15"
     },
     "minimum-stability": "dev",
