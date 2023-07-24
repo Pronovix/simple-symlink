@@ -3,6 +3,7 @@
     "description": "Simple script that creates symlinks when a Composer event occurs.",
     "license": "GPL-2.0-or-later",
     "type": "library",
+    "abandoned": true,
     "keywords": [
         "Composer",
         "symlink",
